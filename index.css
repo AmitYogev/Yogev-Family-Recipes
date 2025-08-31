@@ -1,0 +1,159 @@
+body {
+  background-color: beige;
+  font-family: 'Arial', sans-serif;
+}
+
+.Toolbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #d81111;
+    color: white;
+    padding: 30px;
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0 2px 5px rgb(15, 15, 15);
+}
+
+.title1 {
+    animation: moveRightToLeft 30s linear infinite;
+}
+
+@keyframes moveRightToLeft {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 45%;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2, .card h3, .card h4 {
+  color: #d81111;
+}
+
+.biskvitim, .Rolada {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mitzracim {
+  margin-left: 40px;
+}
+
+ol, ul {
+  text-align: right;
+  direction: rtl;
+}
+
+a {
+  color: #111ed8;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 320px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+h2,h3,h4{
+  text-align: center;
+}
+
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.floating-button:hover {
+  background-color: #005f73;
+}
+
+
+#likeEmoji {
+  position: fixed;
+  bottom: 70px;
+  right: 30px;
+  font-size: 40px;
+  transition: opacity 0.5s ease;
+}
+
+/* מחביאים את האימוג'י בהתחלה */
+.hidden {
+  opacity: 0;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .title1 {
+      font-size: 20px;
+  }
+
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card {
+      max-width: 90%;
+      margin: 10px 0;
+  }
+
+  .floating-button {
+      width: 50px;
+      height: 50px;
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title1 {
+      font-size: 18px;
+  }
+
+  .card {
+      padding: 10px;
+  }
+
+  .floating-button {
+      bottom: 10px;
+      right: 10px;
+  }
+}
