@@ -193,3 +193,16 @@ a:focus-visible, .tab-btn:focus-visible {
   transition: 0.2s;
 }
 .close:hover { color: #ddd; }
+
+.header-img {
+  height: 80px;   /* ברירת מחדל לדסקטופ */
+  width: auto;
+  border-radius: 8px;
+}
+
+/* במסכים קטנים (מובייל) */
+@media (max-width: 600px) {
+  .header-img {
+    height: 40px;   /* מקטין את התמונה */
+  }
+}
