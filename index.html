@@ -8,14 +8,23 @@
   <link rel="stylesheet" href="index.css"/>
 </head>
 <body>
-  <header class="site-header">
-    <h1>אתר המתכונים של משפחת יוגב</h1>
-  </header>
+ <header class="site-header">
+  <h1>אתר המתכונים של משפחת יוגב</h1>
+  <img src="./DOGS.jpg"
+       alt="תמונת כלבים" class="header-img">
+</header>
+<!-- חלון צף לתמונה -->
+<div id="imgModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
 
   <!-- כפתורי כרטיסיות -->
   <div class="tab-buttons" role="tablist" aria-label="בחירת מתכון">
     <button class="tab-btn active" data-tab="biskvitim" role="tab" aria-selected="true" aria-controls="biskvitim">עוגת ביסקוויטים</button>
     <button class="tab-btn" data-tab="rolada" role="tab" aria-selected="false" aria-controls="rolada">עוגת רולדה</button>
+    <button class="tab-btn" data-tab="Oranges" role="tab" aria-selected="false" aria-controls="Oranges">עוגת תפוזים</button>
   </div>
 
   <!-- תוכן כרטיסיות -->
@@ -58,6 +67,36 @@
         </p>
         <img loading="lazy"
              src="https://www.10dakot.co.il/wp-content/uploads/2016/07/%E2%80%8F%E2%80%8FDSC_0091-%D7%A2%D7%95%D7%AA%D7%A7-%D7%A2%D7%95%D7%AA%D7%A7.jpg"
+             alt="עוגת רולדה">
+      </article>
+    </section>
+
+     <section id="Oranges" class="tab-content" role="tabpanel" tabindex="0" hidden>
+      <article class="card">
+        <h2>עוגת תפוזים</h2>
+        <h3>מצרכים:</h3>
+        <ul>
+          <li>6 ביצים L או M</li>
+          <li>1 כוס שמן</li>
+          <li>1 גרידת תפוז מתפוז שלם</li>
+          <li>1 כפית תמצית וניל</li>
+          <li>1/4 כפית מלח</li>
+          <li>1 ו-3/4 כוסות קמח</li>
+          <li>1 שקית אבקת אפייה</li>
+          <li>1 כוס סוכר</li>
+        </ul>
+        <ol>
+          <li>חימום תנור – ל־160° חום עליון־תחתון (לא טורבו).</li>
+          <li>תערובת חלמונים – לטרוף חלמונים עם שמן, מיץ תפוזים, וניל וגרידת תפוז.</li>
+          <li>קצף חלבונים – להקציף חלבונים עם סוכר למהירות גבוהה עד קצף יציב ומבריק (3–4 דק’).</li>
+          <li>קמח – לנפות לקערת החלמונים, להוסיף אבקת אפייה ומלח ולערבב.</li>
+          <li>קיפול – לקפל בהדרגה את קצף החלבונים לתערובת עד אחידות.</li>
+          <li>אפייה – לשפוך לתבנית ללא שימון, לאפות 60–70 דק’ או עד שקיסם יוצא יבש.</li>
+          <li>קירור – להפוך מיד את התבנית (אם זו תבנית עם רגליים) ולקרר הפוך כשעה, אז לחלץ.</li>
+        </ol>
+       
+        <img loading="lazy"
+             src="https://img.mako.co.il/2023/04/20/ORANGE_NofarZur1_re_autoOrient_i.jpg"
              alt="עוגת רולדה">
       </article>
     </section>

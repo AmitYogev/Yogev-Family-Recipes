@@ -24,3 +24,24 @@ buttons.forEach(btn => {
     panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
+// --- מודל תמונה ל-header ---
+const headerImg = document.querySelector('.header-img');
+const modal = document.getElementById('imgModal');
+const modalImg = document.getElementById('modalImg');
+const closeBtn = document.querySelector('.close');
+
+if (headerImg && modal && modalImg && closeBtn) {
+  headerImg.addEventListener('click', () => {
+    modal.style.display = 'block';
+    modalImg.src = headerImg.src;
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  // סגירה בלחיצה מחוץ לתמונה
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) modal.style.display = 'none';
+  });
+}

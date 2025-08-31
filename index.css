@@ -145,3 +145,51 @@ a:focus-visible, .tab-btn:focus-visible {
   .tab-btn { padding: 10px 14px; }
   .card { padding: 14px; }
 }
+
+.site-header {
+  background: #6d597a;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.header-img {
+  height: 40px;   /* גובה קטן שיתאים לכותרת */
+  width: auto;
+  border-radius: 6px;
+}
+/* === חלון צף לתמונה (Modal) === */
+.modal {
+  display: none; /* מוסתר כברירת מחדל */
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  overflow: auto;
+}
+
+.modal-content {
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  margin: 60px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.5);
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.close:hover { color: #ddd; }
